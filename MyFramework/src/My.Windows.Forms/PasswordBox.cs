@@ -26,20 +26,14 @@ namespace My.Windows.Forms
 
         public DialogResult Show(string message)
         {
-            PasswordBox passwordBox = new PasswordBox();
-            passwordBox.SetMessage(message);
-            passwordBox.ShowDialog();
-            return passwordBox.DialogResult;
+            lblMessage.Text = message;
+            ShowDialog();
+            return this.DialogResult;
         }
 
         public DialogResult Show(string format, params object[] args)
         {
             return Show(string.Format(format, args));
-        }
-
-        public void SetMessage(string caption)
-        {
-            lblMessage.Text = caption;
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
