@@ -5,7 +5,7 @@ using System.Text;
 using System.Reflection;
 using System.Diagnostics;
 
-namespace System.Windows.Forms
+namespace My.Windows.Forms
 {
     public static class MyApplication
     {

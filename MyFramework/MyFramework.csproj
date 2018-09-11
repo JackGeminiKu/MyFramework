@@ -52,6 +52,12 @@
     <Compile Include="src\My.Media\FormatConverter.cs" />
     <Compile Include="src\My.Media\Media.cs" />
     <Compile Include="src\My.Threading\AccurateTimer.cs" />
+    <Compile Include="src\My.Windows.Forms\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\My.Windows.Forms\InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="src\My\ExceptionBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,10 +85,14 @@
     <Compile Include="src\My\ByteArrayExtension.cs" />
     <Compile Include="src\My\IntExtension.cs" />
     <Compile Include="src\My\MyDateTime.cs" />
+    <Compile Include="src\System\ByteArrayExtension.cs" />
     <Compile Include="src\System\StringExtension.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="src\My.Windows.Forms\InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\My\ExceptionBox.resx">
       <DependentUpon>ExceptionBox.cs</DependentUpon>
     </EmbeddedResource>
