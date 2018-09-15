@@ -86,6 +86,7 @@
     <Compile Include="src\My\IntExtension.cs" />
     <Compile Include="src\My\MyDateTime.cs" />
     <Compile Include="src\System\ByteArrayExtension.cs" />
+    <Compile Include="src\System\IntExtension.cs" />
     <Compile Include="src\System\StringExtension.cs" />
   </ItemGroup>
   <ItemGroup />

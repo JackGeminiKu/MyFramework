@@ -17,7 +17,7 @@ namespace My.Windows.Forms
 
         public static string Version
         {
-            get { return Assembly.GetExecutingAssembly().GetName().Version.ToString(); }
+            get { return Assembly.GetCallingAssembly().GetName().Version.ToString(); }
         }
 
         public static void Exit()
