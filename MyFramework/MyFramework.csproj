@@ -89,7 +89,6 @@
     <Compile Include="src\System\IntExtension.cs" />
     <Compile Include="src\System\StringExtension.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="src\My.Windows.Forms\InputBox.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
