@@ -12,11 +12,7 @@ namespace System
         /// </summary>
         public static string ToHexString(this byte[] values)
         {
-            string result = "";
-            for (int i = 0; i < values.Length; i++) {
-                result = (i == 0 ? "" : "") + values[i].ToString("X2") + result;
-            }
-            return result;
+            return ToHexString(values, " ");
         }
 
         /// <summary>
